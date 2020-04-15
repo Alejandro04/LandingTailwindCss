@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TailwindCss</title>
+    <link rel="stylesheet" href="css/app.css">
+</head>
+
+<body>
+
+    <div class="mx-0 px-0">
+        <div class="hidden md:block">
+            <div class="fixed top-0" style="z-index:-1">
+                <video autoplay muted loop id="myVideo" class="hidden sm:block">
+                    <source src="videos/bg3.webm" type="video/mp4">
+                </video>
+            </div>
+            <nav class="hidden lg:flex justify-between px-10 py-6 text-black sm:text-white">
+                <div class="md:w-1/3 md:flex md:justify-between">
+                    <div>
+                        <svg width="124.2" height="23" viewBox="0 0 108 20" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M7.34677 16.1772C8.0394 16.1772 8.60834 16.0035 9.07833 15.6313C9.54833 15.2592 9.84517 14.7629 9.96885 14.1674H14.1988C14.0257 15.9043 13.3083 17.3185 12.022 18.3854C10.7604 19.4523 9.20202 19.9982 7.32203 19.9982C5.19469 19.9982 3.46312 19.3531 2.07787 18.0381C0.692625 16.7479 0 15.0607 0 12.9765C0 10.9171 0.692625 9.25473 2.07787 7.96452C3.48786 6.62469 5.21942 5.97958 7.32203 5.97958C9.15254 5.97958 10.7357 6.52544 12.022 7.61715C13.1807 8.63547 14.0504 10.0735 14.1988 11.8103H9.96885C9.8699 11.19 9.57306 10.7186 9.07833 10.3464C8.60834 9.97426 8.01466 9.80058 7.34677 9.80058C6.43152 9.80058 5.68942 10.0983 5.12048 10.6938C4.55153 11.2893 4.27943 12.0584 4.27943 13.0261C4.27943 13.9938 4.55153 14.7629 5.12048 15.3584C5.68942 15.8794 6.43152 16.1772 7.34677 16.1772Z"
+                                fill="#fff"></path>
+                            <path
+                                d="M25.5035 6.00439V10.272C23.4998 10.3464 21.9661 10.9171 20.9025 11.9592V19.6508H16.4004V6.2277H20.9025V7.66678C22.164 6.55025 23.6977 6.00439 25.5035 6.00439Z"
+                                fill="#fff"></path>
+                            <path
+                                d="M40.6422 12.6539C40.6422 13.3735 40.6175 13.9193 40.568 14.2667H31.0444C31.4649 15.7058 32.4791 16.4253 34.0623 16.4253C35.0023 16.4253 35.6701 16.1028 36.1154 15.4577H40.568C40.2464 16.8471 39.4796 17.9388 38.2922 18.7576C37.1049 19.5764 35.6949 19.9734 34.0375 19.9734C31.8607 19.9734 30.1044 19.3283 28.7439 18.0133C27.4081 16.723 26.7402 15.0359 26.7402 12.9517C26.7402 10.8923 27.3834 9.22991 28.6944 7.91489C30.0302 6.59988 31.7618 5.95477 33.8891 5.95477C35.8433 5.95477 37.4759 6.57506 38.787 7.84046C39.9991 9.03142 40.6422 10.6442 40.6422 12.6539ZM33.8149 9.37878C32.3307 9.37878 31.3907 10.1231 31.0197 11.6118H36.4617C36.2144 10.1231 35.3238 9.37878 33.8149 9.37878Z"
+                                fill="#fff"></path>
+                            <path
+                                d="M51.279 5.80593C52.9611 5.80593 54.3464 6.3766 55.3853 7.49313C56.4242 8.60966 56.9684 10.0984 56.9684 11.984V19.6509H52.4911V12.7036C52.4911 11.7856 52.2685 11.0908 51.848 10.5946C51.4027 10.1232 50.809 9.87505 50.0422 9.87505C49.2012 9.87505 48.3849 10.3217 47.618 11.2149V19.6509H43.116V0H47.618V7.12095C48.7559 6.25254 49.968 5.80593 51.279 5.80593Z"
+                                fill="#fff"></path>
+                            <path
+                                d="M74.0366 6.22767V19.6508H69.5593V18.9064C68.4956 19.6012 67.2588 19.9237 65.8983 19.9237C64.0678 19.9237 62.4846 19.2538 61.1983 17.914C59.8873 16.5493 59.2441 14.887 59.2441 12.9268C59.2441 10.9667 59.8873 9.30432 61.1983 7.93968C62.4846 6.59985 64.043 5.92993 65.8983 5.92993C67.2835 5.92993 68.4956 6.2773 69.5593 6.94721V6.22767H74.0366ZM66.8135 16.2516C67.902 16.2516 68.8172 15.8298 69.584 15.011V10.8178C68.8172 9.99905 67.902 9.57725 66.8135 9.57725C65.923 9.57725 65.1562 9.8998 64.5378 10.5449C63.9194 11.19 63.6225 11.984 63.6225 12.9268C63.6225 13.8697 63.9194 14.6636 64.5378 15.2839C65.1562 15.929 65.8983 16.2516 66.8135 16.2516Z"
+                                fill="#fff"></path>
+                            <path
+                                d="M85.2424 5.80585C86.9245 5.80585 88.3098 6.37652 89.3487 7.49304C90.3876 8.60957 90.9319 10.0983 90.9319 11.984V19.6508H86.4545V12.7035C86.4545 11.7855 86.2319 11.0907 85.8114 10.5945C85.3661 10.1231 84.7724 9.87496 84.0056 9.87496C83.1646 9.87496 82.3482 10.3216 81.5814 11.2148V19.6508H77.0793V6.22765H81.5814V7.12087C82.7193 6.25246 83.9561 5.80585 85.2424 5.80585Z"
+                                fill="#fff"></path>
+                            <path
+                                d="M108 6.22767V19.6508H103.523V18.9064C102.459 19.6012 101.222 19.9237 99.8617 19.9237C98.0312 19.9237 96.448 19.2538 95.1617 17.914C93.8507 16.5493 93.2075 14.887 93.2075 12.9268C93.2075 10.9667 93.8507 9.30432 95.1617 7.93968C96.448 6.59985 98.0064 5.92993 99.8617 5.92993C101.247 5.92993 102.459 6.2773 103.523 6.94721V6.22767H108ZM100.777 16.2516C101.865 16.2516 102.781 15.8298 103.547 15.011V10.8178C102.781 9.99905 101.865 9.57725 100.777 9.57725C99.8864 9.57725 99.1196 9.8998 98.5012 10.5449C97.8827 11.19 97.5859 11.984 97.5859 12.9268C97.5859 13.8697 97.8827 14.6636 98.5012 15.2839C99.1196 15.929 99.8617 16.2516 100.777 16.2516Z"
+                                fill="#fff">
+
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="font-bold text-sm">Aprende</div>
+                    <div>Search</div>
+                </div>
+                <div class="w-1/2 flex justify-between">
+                    <div class="font-bold text-sm">Comunidad</div>
+                    <div class="font-bold text-sm">Membresias</div>
+                    <div>|</div>
+                    <div class="font-bold text-sm">Carrito</div>
+                    <div class="font-bold text-sm">Ingresar</div>
+                    <div
+                        class="font-bold text-sm border px-8 py-2 hover:text-blue-700 hover:bg-white cursor-pointer -m-2">
+                        Registrate</div>
+                </div>
+            </nav>
+            <div class="w-full lg:w-1/2 px-8 md:py-8 ml-12 mt-8">
+                <h1 class="text-5xl font-bold text-white leading-none mb-4">Lleva la educación a tu casa</h1>
+                <h2 class="text-white text-xl mb-4">Desde diseño hasta negocios, construye tu futuro profesional. 100%
+                    Online.</h2>
+                <input type="text" placeholder="Encuentra cursos y profesores"
+                    class="py-4 mb-4 shadow appearance-none border rounded w-full lg:w-full md:w-1/2 py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+        </div>
+
+        <div class="md:hidden bg-auto h-auto text-white py-24 px-10 mx-2" style="background-image: url(img/xs-image.jpg); 
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin:auto">
+            <div class="w-full md:w-1/2 px-4">
+                <h1 class="text-5xl font-bold text-white leading-none mb-4">Lleva la educación a tu casa</h1>
+                <h2 class="text-white text-xl mb-4">Desde diseño hasta negocios, construye tu futuro profesional. 100%
+                    Online.</h2>
+                <input type="text" placeholder="Encuentra cursos y profesores"
+                    class="py-4 mb-4 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline">
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
